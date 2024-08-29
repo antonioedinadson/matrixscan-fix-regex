@@ -76,7 +76,7 @@ android {
 
     namespace "com.matrixcountscan"
     defaultConfig {
-        applicationId "com.matrixcountscan"
+        applicationId "com.cdpriex_scanapp.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

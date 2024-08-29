@@ -8,7 +8,8 @@ const MatrixCountScan = () => {
 
     // CONTEXT
     const dataCaptureContext = useMemo(() => {
-        return DataCaptureContext.forLicenseKey('license_key');
+        // return DataCaptureContext.forLicenseKey('license_key');
+        return DataCaptureContext.forLicenseKey('LICENSE_KEY_HERE');
     }, []);
 
     // REFS
@@ -29,7 +30,7 @@ const MatrixCountScan = () => {
             settings.enableSymbologies([Symbology.EAN8, Symbology.Code128]);
 
             const filterSettings = settings.filterSettings;
-            filterSettings.excludedCodesRegex = "^1234.*";
+            filterSettings.excludedCodesRegex = '^1234.*';
 
             const barcodeCount = BarcodeCount.forContext(dataCaptureContext, settings);
 
